@@ -9,16 +9,16 @@ var myArray=[
 function myclickNumber(e){
     var key=e.keyCode;
     console.log(key);
-    //in ascii table, 48 means 0 and 57 means 9 
+    //in ascii table, 48 means 0 and 57 means 9
     //while 8 means backspace and 13 means return
     //so it can be used by keyboard to search the result directly
     if((key>=48&&key<=57)||(key==8||key==13)){
-        
+
         return key;
     }
     else{
         return false;
-        
+
     }
 }
 //make sure that search name box could only search name
@@ -37,8 +37,8 @@ function myclickText(e){
 
 ///////////////////////////////////////////
 //////////////////////////////////////////
-function searchName() {
-   
+function getSearchName() {
+
    var div=document.getElementById("pokemonList");
    while(div.firstChild){div.removeChild(div.firstChild);}
    var pokemon=document.getElementById("searchName").value
@@ -48,7 +48,7 @@ function searchName() {
    }
 }
 function searchNumber(){
-    
+
     var div=document.getElementById("pokemonList");
     while(div.firstChild){div.removeChild(div.firstChild);}
     var pokemon_number=document.getElementById("searchNumber").value
@@ -59,7 +59,7 @@ function searchNumber(){
 
 }
 
- 
+
 function getSearchNum(value,data){
     //var searchVal=document.getElementById("searchNumberBar").value;
     //var list=document.getElementsByTagName("li");
@@ -73,7 +73,7 @@ function getSearchNum(value,data){
             document.getElementById("pokemonList").appendChild(getList(i+1, data[i].img, data[i].name, data[i].description));
         }
     }
-    
+
 }
 function getSearchObj(value,data){
     //console.log(Object.prototype.toString);
@@ -84,7 +84,7 @@ function getSearchObj(value,data){
             document.getElementById("pokemonList").appendChild(getList(i+1, data[i].img, data[i].name, data[i].description));
             }
     }
-    
+
 }
 function getList(num,img,name,description){
     let list=document.createElement("div");
