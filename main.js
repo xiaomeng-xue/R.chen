@@ -80,7 +80,7 @@ function getSearchObj(value,data){
     for (i=0; i<20;i++){
 
         //mistake html里也有 在onclick那里 我改成getSearchObj（value， data）后说data undefined
-        if(data[i].name.toString().toLowerCase.includes(value.toString().toLowerCase())){
+        if(data[i].name.toString().toLowerCase().includes(value.toString().toLowerCase())){
             document.getElementById("pokemonList").appendChild(getList(i+1, data[i].img, data[i].name, data[i].description));
             }
     }
