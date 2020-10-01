@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
-    
+
+
 </head>
 <body>
 
-    
+
         <div class="container">
             <!--build the search name box -->
             <div class="search-name-wrapper">
@@ -27,10 +27,10 @@
                     placeholder="search for Name"
                     />
                     <!--onkeydown can make keyboard to put information in the button -->
-                    <button type="submit" onclick="getSearchObj()">
+                    <button type="submit" onclick="searchName()">
                     <!--onclikc can make mouse to click the button and get the result -->
 
-                    
+
 
                     </button>
                 </form>
@@ -38,21 +38,21 @@
             </div>
             <div class="search-number-wrapper">
                 <form>
-                    <input 
+                    <input
                     onkeydown="return myclickNumber(event)"
-                    type="number" 
-                    name="searchNumberBar" 
-                    id="searchNumber" 
+                    type="number"
+                    name="searchNumberBar"
+                    id="searchNumber"
                     min="1"
                     max="20"
                     placeholder="search for Number" />
                     <!-- min and max make sure the number should between 1 and 20 -->
                     <button type="submit"  onclick="getSearchNum()">
-                    
+
                     </button>
             </form>
             </div>
-            
+
         </div>
 
 
@@ -60,7 +60,7 @@
 
 
 
-        
+
         <!-- import list-->
          <ul id="pokemonList">
              <!-- this class can be used in css to layout of all images-->
@@ -72,7 +72,7 @@
                             Type: Grass & Poison<br>
                             Weakness: Fire,Psychic,Flying,Ice
                         </li>
-                        
+
                     </div>
 
                     <div class="list-img-wrapper">
@@ -81,17 +81,17 @@
                             Type: Grass & Poison<br>
                             Weakness: Fire,Psychic,Flying,Ice
                         </li>
-                        
+
                     </div>
 
-                    
+
 
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/3.png"></img>
                         <li id="003 Venusaur"> 003 Venusaur <br>Type: Grass & Poison<br>
                             Weakness: Fire,Psychic,Flying,Ice
                         </li>
-                        
+
                     </div>
 
                     <div class="list-img-wrapper">
@@ -100,7 +100,7 @@
                             Type: Fire<br>
                             Weakness: Water,Ground,Rock
                         </li>
-                        
+
                     </div>
 
                     <div class="list-img-wrapper">
@@ -108,10 +108,10 @@
                         <li id="005 Charmeleon">005 Charmeleon <br>Type: Fire<br>
                             Weakness: Water,Ground,Rock
                         </li>
-                        
+
                     </div>
 
-                   
+
 
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/6.png"></img>
@@ -119,107 +119,107 @@
                             Type: Fire & Flying<br>
                             Weakness: Water,Electric,Rock
                         </li>
-                        
+
                     </div>
-                    
+
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/7.png"></img>
                         <li id="007 Squirtle">007 Squirtle <br>Type: Water<br>
                             Weakness: Grass,Electric
                         </li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/8.png"></img>
                         <li id="008 Wartortle">008 Wartortle <br>Type: Water<br>
                             Weakness: Grass,Electric
                         </li>
-                        
+
                     </div>
-                    
+
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/9.png"></img>
                         <li id="009 Blastoise">009 Blastoise <br>Type: Water<br>
                             Weakness: Grass,Electric
                         </li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/10.png"></img>
                         <li id="010 Caterpie">010 Caterpie <br>Type: Bug<br>
                             Weakness: Fire, Flying,Rock
                         </li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/11.png"></img>
                         <li id="011 Metapod">011 Metapod <br>Type: Bug<br>
                             Weakness: Fire, Flying,Rock
                         </li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/12.png"></img>
                         <li id="012 Butterfree">012 Butterfree <br>Type: Bug & Flying<br>
                             Weakness: Fire, Flying,Electric,Ice,Rock
                         </li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/13.png"></img>
                         <li id="013 Weedle">013 Weedle <br>Type: Bug & Poison<br>
                             Weakness: Fire, Psychic,Flying,Rock
                         </li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/14.png"></img>
                         <li id="014 Kakuna">014 Kakuna <br>Type: Bug & Poison<br>
                             Weakness: Fire, Psychic,Flying,Rock
                         </li>
-                        
+
                     </div>
-                    
+
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/15.png"></img>
                         <li id="">015 Beedrill <br>Type: Bug & Poison<br>
                             Weakness: Fire, Psychic,Flying,Rock
                         </li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/16.png"></img>
                         <li id="016 Pidgey">016 Pidgey <br>Type: Normal & Flying<br>
                             Weakness:Electric,Ice,Rock
                         </li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/17.png"></img>
                         <li id="017 Pidgeotto">017 Pidgeotto <br>Type: Normal & Flying<br>
                             Weakness:Electric,Ice,Rock
                         </li>
-                        
+
                     </div>
-                    
+
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/18.png"></img>
                         <li id="018 Pidgeot">018 Pidgeot <br>Type: Normal & Flying<br>
                             Weakness:Electric,Ice,Rock
                         </li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/19.png"></img>
                         <li id="019 Rattata">019 Rattata <br>Type: Normal <br>
                             Weakness:Fighting</li>
-                        
+
                     </div>
                     <div class="list-img-wrapper">
                         <img id="image" src="pokemon/20.png"></img>
                         <li id="020 Raticate">020 Raticate <br>Type: Normal <br>
                             Weakness:Fighting</li>
-                        
+
                     </div>
 
 
@@ -229,4 +229,4 @@
         <script src="main.js"></script>
     </body>
 </html>
-    
+
