@@ -77,7 +77,7 @@ function getSearchNum(value,data){
 }
 function getSearchObj(value,data){
     //console.log(Object.prototype.toString);
-    for (i=0; i<20;i++){
+    for (i=0; i<2;i++){
 
         //mistake html里也有 在onclick那里 我改成getSearchObj（value， data）后说data undefined
         if(data[i].name.toString().toLowerCase().includes(value.toString().toLowerCase())){
